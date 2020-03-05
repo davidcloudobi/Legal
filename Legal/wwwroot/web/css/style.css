@@ -1890,6 +1890,7 @@ h3.agileits-title {
 }
 a.wthree-more.w3more1 {
     margin-top: 1em;
+   
 }
 .w3agile_hire_right {
     text-align: left;
@@ -2078,7 +2079,8 @@ ul.simplefilter {
     font-size: 1.2em;
 }
 a.wthree-more { 
-    font-size: 0.9em; 
+    font-size: 0.9em;
+    color: white;
 }
 .w3layouts_footer_grid h2:after {
     left: 23%; 
@@ -2532,5 +2534,18 @@ a.wthree-more {
 .contact-right textarea { 
     min-height: 7em; 
 }
+}
+
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #0495c9;
+    border-color: #357ebd; /*set the color you want here*/
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #00b3db;
+    border-color: #285e8e; /*set the color you want here*/
 }
 /*-- //responsive-design --*/
