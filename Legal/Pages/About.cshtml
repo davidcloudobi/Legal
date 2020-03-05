@@ -1,0 +1,176 @@
+﻿@page
+@model Legal.AboutModel
+@{
+    ViewData["Title"] = "About";
+}
+
+
+
+    <!-- //banner -->
+    <!-- //about -->
+    <div class="about about-wthree">
+        <div class="container">
+            <div class="w3ls-title">
+                <h3 class="agileits-title">About us</h3>
+            </div>
+            <p class="about-w3text">
+                Ut porttitor ut est eu ornare. In metus dui, suscipit at viverra faucibus, accumsan at odio. Duis finibus sollicitudin libero, sed tempor diam euismod sed. Sed interdum odio a finibus gravida. Aliquam tincidunt nisl nec urna euismod, ullamcorper scelerisque magna vulputate.
+                Duis finibus sollicitudin libero, sed tempor diam euismod sed. Sed interdum odio a finibus gravida. Aliquam tincidunt nisl nec urna euismodl nec.
+                Duis finibus sollicitudin libero, sed tempor diam euismod sed. Sed interdum odio a finibus gravida. Aliquam tincidunt nisl nec urna euismod, ullamcorper scelerisque magna vulputate.
+                Duis finibus sollicitudin libero, sed tempor diam euismod sed. Sed interdum odio a finibus gravida. Aliquam tincidunt nisl nec urna euismodl nec.
+            </p>
+            <div class="about-bottom-row">
+                <div class="col-md-6 offic-time">
+                    <div class="time-top">
+                        <h4>Our Mission</h4>
+                    </div>
+                    <div class="time-bottom">
+                        <p>
+                            Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+                            molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
+                            ut labore et dolore magnam velit esse quam. Sed interdum odio a finibus gravida. Aliquam tincidunt nisl nec urna euismod,
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 testi">
+                    <div class="testi-slider">
+                        <h3 class="title1">FAQ</h3>
+                        <div class="flexslider flexslider1">
+                            <ul class="slides">
+                                <li>
+                                    <h4>Sed interdum odio a finibus ?</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu magna dolor, quisque semper Sed interdum odio a finibus gravida. Aliquam tincidunt nisl nec urna euismod,</p>
+                                </li>
+                                <li>
+                                    <h4>Consectetur  odio a finibus ?</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu magna dolor, quisque semper magna vulputate.</p>
+                                </li>
+                                <li>
+                                    <h4>Aliquam tincidunt nisl ?</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu magna dolor, quisque semper inibus solli citudin libero.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- FlexSlider -->
+                        <script defer src="~/web/js/jquery.flexslider.js"></script>
+                        <script type="text/javascript">
+                            $(window).load(function () {
+                                $('.flexslider').flexslider({
+                                    animation: "slide",
+                                    start: function (slider) {
+                                        $('body').removeClass('loading');
+                                    }
+                                });
+                            });
+                        </script>
+                        <!-- End-slider-script -->
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //about -->
+    <!-- //Awards-->
+    <div class="awards-agileinfo  agileits jarallax">
+        <div class="awardsw3-agileits banner-agileinfo">
+            <div class="container">
+                <div class="w3ls_banner_bottom_grids">
+                    <div class="col-sm-3 col-xs-3 w3ls_about_guage">
+                        <h4>Awards</h4>
+                        <canvas id="gauge1" width="200" height="100"></canvas>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 w3ls_about_guage">
+                        <h4>Followers</h4>
+                        <canvas id="gauge2" width="200" height="100"></canvas>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 w3ls_about_guage">
+                        <h4>Projects</h4>
+                        <canvas id="gauge3" width="200" height="100"></canvas>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 w3ls_about_guage">
+                        <h4>Support</h4>
+                        <canvas id="gauge4" width="200" height="100"></canvas>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+        <script src="~/web/js/jquery.gauge.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#gauge1").gauge(30, { color: "#ef3708", unit: " %", type: "halfcircle" });
+                $("#gauge2").gauge(70, { color: "#5f48f9", unit: " %", type: "halfcircle" });
+                $("#gauge3").gauge(75, { color: "#10b55d", unit: " %", type: "halfcircle" });
+                $("#gauge4").gauge(90, { color: "#20c4da", unit: " %", type: "halfcircle" });
+            });
+        </script>
+    </div>
+    <!-- //Awards-->
+    <!-- features -->
+    <div class="features">
+        <div class="container">
+            <div class="w3ls-title">
+                <h3 class="agileits-title">Features</h3>
+            </div>
+            <div class="w3agile_features_w3row">
+                <div class="col-md-4 col-xs-6 agileinfo_features_grid">
+                    <div class="agileinfo_features_grid1">
+                        <h4>best resources we have</h4>
+                        <p>Phasellus a porttitor metus, vitae ultrices nibh. Sed eu fermentum nunc.</p>
+                        <div class="agileinfo_features_grid1_pos">
+                            <span>1.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 agileinfo_features_grid">
+                    <div class="agileinfo_features_grid1">
+                        <h4>best effort we provide</h4>
+                        <p>Phasellus a porttitor metus, vitae ultrices nibh. Sed eu fermentum nunc.</p>
+                        <div class="agileinfo_features_grid1_pos">
+                            <span>2.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 agileinfo_features_grid">
+                    <div class="agileinfo_features_grid1">
+                        <h4>best services & solutions</h4>
+                        <p>Phasellus a porttitor metus, vitae ultrices nibh. Sed eu fermentum nunc.</p>
+                        <div class="agileinfo_features_grid1_pos">
+                            <span>3.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 agileinfo_features_grid">
+                    <div class="agileinfo_features_grid1">
+                        <h4>provide personalized services</h4>
+                        <p>Phasellus a porttitor metus, vitae ultrices nibh. Sed eu fermentum nunc.</p>
+                        <div class="agileinfo_features_grid1_pos">
+                            <span>4.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 agileinfo_features_grid">
+                    <div class="agileinfo_features_grid1">
+                        <h4>professional approach</h4>
+                        <p>Phasellus a porttitor metus, vitae ultrices nibh. Sed eu fermentum nunc.</p>
+                        <div class="agileinfo_features_grid1_pos">
+                            <span>5.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xs-6 agileinfo_features_grid">
+                    <div class="agileinfo_features_grid1">
+                        <h4>financial support</h4>
+                        <p>Phasellus a porttitor metus, vitae ultrices nibh. Sed eu fermentum nunc.</p>
+                        <div class="agileinfo_features_grid1_pos">
+                            <span>6.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //features -->
+  
