@@ -53,9 +53,10 @@
 
 
 
+@using LegalData.Model
 @using Microsoft.AspNetCore.Identity
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
 
 <!DOCTYPE html>
 <html lang="en">
@@ -120,13 +121,14 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="social-w3licon">
+                    @*<div class="social-w3licon">
                         <ul class="social_agileinfo">
                             <li><a href="~/web/#" class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="~/web/#" class="w3_twitter"><i class="fa fa-twitter"></i></a></li>
                             <li><a href="~/web/#" class="w3_instagram"><i class="fa fa-instagram"></i></a></li>
                             <li><a href="~/web/#" class="w3_google"><i class="fa fa-google-plus"></i></a></li>
-                            <li></li>
+                            <li></li>*@
+                    <div><ul>
                             @if (SignInManager.IsSignedIn(User))
                             {
                                 <li class="nav-item">
@@ -148,7 +150,8 @@
                             <span class="circleLight"></span>
                             <h3>Need a legal advice </h3>
                             <p>Integer et feugiat elit. Nullam at turpis vel sapien aliquam feugiat vitae vitae mi. Donec scelerisque, justo vel blandit tempor, quam tellus blandit lectus, ut viverra leo velit et quam. </p>
-                            <h6><span class="glyphicon glyphicon-earphone"></span> +1 555 222 1111 </h6>
+                            <h6><span class="glyphicon glyphicon-earphone"></span> +1 555 222 1111</h6>
+
                         </div>
                     </div>
                 </div>
@@ -186,18 +189,20 @@
     <div class="about">
         <div class="container">
             <div class="w3ls-title">
-                <h3 class="agileits-title">About us</h3>
+                <h3 class="agileits-title">CATEGORIES</h3>
             </div>
             <p class="about-w3text">
-                Ut porttitor ut est eu ornare. In metus dui, suscipit at viverra faucibus, accumsan at odio. Duis finibus sollicitudin libero, sed tempor diam euismod sed. Sed interdum odio a finibus gravida. Aliquam tincidunt nisl nec urna euismod, ullamcorper scelerisque magna vulputate.
-                Duis finibus sollicitudin libero, sed tempor diam euismod sed. Sed interdum odio a finibus gravida. Aliquam tincidunt nisl nec urna euismodl nec.
-                Duis finibus sollicitudin libero, sed tempor diam euismod sed. Sed interdum odio a finibus gravida. Aliquam tincidunt nisl nec urna euismod, ullamcorper scelerisque magna vulputate.
-                Duis finibus sollicitudin libero, sed tempor diam euismod sed. Sed interdum odio a finibus gravida. Aliquam tincidunt nisl nec urna euismodl nec.
+                Collaborations among Kirkland attorneys in various disciplines produce innovative legal solutions for our clients.
+                We work together across offices and practice areas as integrated, multidisciplinary teams to provide the capabilities necessary to generate great results for our clients.
             </p>
             <div class="services-row-agileinfo">
                 <div class="col-sm-4 col-xs-4 services-w3grid">
-                    <span class="fa fa-book hi-icon" aria-hidden="true"></span>
-                    <h5>Cum soluta nobis</h5>
+                    <a asp-area="" asp-page="/About">
+                        <span class="fa fa-book hi-icon" aria-hidden="true"></span>
+                        <h5>
+                            Cum soluta nobise
+                        </h5>
+                    </a>
                     <p>Itaque earum rerum hic a sapiente delectus finibus gravida</p>
                 </div>
                 <div class="col-sm-4 col-xs-4 services-w3grid">
@@ -321,12 +326,12 @@
     <div class="footer-agiletop">
         <div class="container">
             <div class="col-md-8 w3agile_hire_left">
-                <h4>We are always ready to help you. There are many ways to contact us</h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt.</p>
+                <h4>GET HIRED ALL AROUND THE WORLD</h4>
+                <p>Are you a lawyer? Create your profile now</p>
             </div>
             <div class="col-md-4 w3agile_hire_right text-white">
-                <a class=" text-white text-capitalize wthree-more w3more1" asp-area="" asp-page="/Contact">
-                    <span>h</span><span>i</span><span>r</span><span>e</span> <span>m</span><span>e</span>
+                <a class=" text-white text-capitalize wthree-more w3more1" asp-area="" asp-page="/RegLawyer">
+                    <span>C</span><span>R</span><span>E</span><span>A</span> <span>T</span><span>E</span>
                 </a>
             </div>
             <div class="clearfix"> </div>

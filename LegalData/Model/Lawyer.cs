@@ -10,6 +10,8 @@ namespace LegalData.Model
         public string Name { get; set; }
         public string Category { get; set; }
         public string Location { get; set; }
+        public string Age { get; set; }
+        public string   Email { get; set; }
         public string Contact { get; set; }
         public Services Service { get; set; }
         public Package  Package { get; set; }

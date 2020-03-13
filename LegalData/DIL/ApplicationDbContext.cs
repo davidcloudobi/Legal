@@ -9,7 +9,7 @@ namespace LegalData.DIL
 {
   public  class ApplicationDbContext:IdentityDbContext<User>
     {
-        private DbSet<Lawyer> Lawyers { get; set; }
+       public DbSet<Lawyer> Lawyers { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options)
         {
