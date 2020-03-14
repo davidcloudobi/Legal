@@ -27,14 +27,16 @@
     <!-- //Meta tags -->
     <!-- Stylesheet -->
     <link href="~/regLawyer/css/style.css" rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- //Stylesheet -->
     <!--fonts-->
     <link href="//fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
     <!--//fonts-->
 </head>
 
-<body>
+<body class="pt-5">
     <!--background-->
     <h1>Registration Form</h1>
     <div class="bg-w3layouts-main">
@@ -62,7 +64,7 @@
                     </div>
                     <div class="bottom-w3-agileits-space form-text2">
 
-                        <select class="bottom-w3-agileits-space form-text2" asp-for="Lawyer.Service" asp-items="Html.GetEnumSelectList<Services>()">
+                        <select class="bottom-w3-agileits-space form-text2 w-100 h-100" asp-for="Lawyer.Service" asp-items="Html.GetEnumSelectList<Services>()">
                         </select>
 
                         <span class="text-danger" asp-validation-for="Lawyer.Service"></span>
@@ -72,7 +74,7 @@
 
                 <div class="main-divs-agileits-w3layouts">
                     <div class="bottom-w3-agileits-space form-text2">
-                        <select class="bottom-w3-agileits-space form-text2" asp-for="Lawyer.Package" asp-items="Html.GetEnumSelectList<Package>()">
+                        <select class="bottom-w3-agileits-space form-text2 w-100 h-100" asp-for="Lawyer.Package" asp-items="Html.GetEnumSelectList<Package>()">
                         </select>
                         <span class="text-danger" asp-validation-for="Lawyer.Package"></span>
                     </div>
@@ -94,11 +96,13 @@
                 @*</div>*@
                 <div class="main-divs-agileits-w3layouts">
                     <div class="bottom-w3-agileits-space form-text1">
-                        <input asp-for="Lawyer.Age" placeholder="Age" required="">
+                        <input asp-for="Lawyer.Age" placeholder="Age" required="" class="frm-field required sect w-100" id="country1">
                     </div>
+
                     <div class="bottom-w3-agileits-space form-text2">
-                        <input asp-for="Lawyer.Category" placeholder="Category" required="">
-                    </div>
+                        <input asp-for="Lawyer.Category" placeholder="Category" class="bottom-w3-agileits-space form-text2 w-100" required="">
+                    
+                        </div>
                 </div>
                 <div class="bottom-text-wthree">
                     <h6>May we send information about us to the mailing address that you provided?</h6>
